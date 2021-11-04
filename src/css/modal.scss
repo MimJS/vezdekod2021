@@ -1,0 +1,49 @@
+.modal_my {
+    .modal_close {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .vkuiModalPage__in {
+        background: transparent;
+        .vkuiModalPage__content-wrap {
+            .ModalPage__content-in {
+                background: linear-gradient(
+                    180deg, #252527 0%, #2a2a2e 100%);
+                padding: 44px;
+                position: relative;
+                border-radius: 16px 16px 0px 0px;
+                display: flex;
+                flex-direction: column;
+                .modal_title {
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 12px;
+                }
+                .modal_desc {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #b8b8b8;
+                    margin-bottom: 12px;
+                    padding:0 10px;
+                    text-align: center;
+                }
+                .modal_close_btn {
+                    background: rgba(255, 255, 255, 0.06);
+                    .Button__content {
+                        padding:0px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,194 @@
+body {
+    #main {
+        .vkuiPanelHeader {
+            & {
+                box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+            }
+            .vkuiPanelHeader__in {
+                backdrop-filter: blur(10px);
+                .vkuiPanelHeader__content {
+                    & {
+                        padding-left: 24px;
+                    }
+                    .PanelHeaderContent__children-in {
+                        & {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            svg {
+                                color: #f9d039;
+                            }
+                            span {
+                                margin-right: 5px;
+                                font-weight: bold;
+                                font-size: 20px;
+                                line-height: 23px;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .in {
+            & {
+                margin: 24px;
+                margin-bottom: 110px !important;
+            }
+            .user_profile {
+                & {
+                    background: linear-gradient(180deg, #252527 0%, #2a2a2e 100%);
+                    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.16);
+                    border-radius: 16px;
+                    padding: 26px;
+                    margin-bottom: 16px;
+                    flex-direction: column;
+                }
+                .vkuiSimpleCell__main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .Avatar {
+                    margin: 0px !important;
+                }
+                .nickname {
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: #ffffff;
+                }
+                .total_scan {
+                    display: flex;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #8c8c9e;
+                    flex-direction: row;
+                    align-items: center;
+                    .count {
+                        margin-left: 2px;
+                        margin-right: 2px;
+                        color: #f9d039;
+                    }
+                    svg {
+                        color: #f9d039;
+                    }
+                }
+            }
+            .list {
+                & {
+                    padding: 16px;
+                    background: linear-gradient(180deg, #252527 0%, #2a2a2e 100%);
+                    border-radius: 16px;
+                }
+                .up {
+                    & {
+                        margin-bottom: 8px;
+                    }
+                    .list_name {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: #ffffff;
+                        margin-left: 10px;
+                    }
+                    .vkuiSliderSwitch {
+                        & {
+                            background: rgba(255, 255, 255, 0.06);
+                            margin-top: 8px;
+                            border-radius: 16px;
+                        }
+                        .vkuiText {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: rgba(255, 255, 255, 0.65);
+                        }
+                        .vkuiSliderSwitch__slider {
+                            background: linear-gradient(180deg, #252527 0%, #2a2a2e 100%);
+                            border-radius: 14px;
+                        }
+                        .vkuiSliderSwitch__button--active {
+                            .vkuiText {
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
+                .list_qr_block {
+                    &:not(:first-child) {
+                        margin-top: 8px;
+                    }
+                    padding: 8px;
+                    border-radius: 16px;
+                    background: rgba(255, 255, 255, 0.06) !important;
+                    .Avatar {
+                        background: rgba(255, 255, 255, 0.06) !important;
+                    }
+                    .actions {
+                        display: flex;
+                        flex-direction: row;
+                        .Button {
+                            &:last-child {
+                                margin-left: 5px;
+                            }
+                            background: rgba(255, 255, 255, 0.06) !important;
+                            margin: 0px;
+                            min-height: 0px;
+                            padding: 5px !important;
+                            border-radius: 50px;
+                            .Button__content {
+                                margin: 0px;
+                                padding: 0px;
+                                .vkuiIcon {
+                                    margin-left: 0px !important;
+                                }
+                                svg {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    .date {
+                        font-size: 12px;
+                        line-height: 14px;
+                        display: flex;
+                        font-style: normal;
+                        font-weight: normal;
+                        color: rgba(255, 255, 255, 0.55);
+                    }
+                    .qr_name {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .bottom_menu {
+            height: 96px;
+            background: rgba(0, 0, 0, 0.26);
+            backdrop-filter: blur(10px) !important;
+            box-shadow: 0px -12px 24px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .Button {
+                border: 2px solid rgba(255, 255, 255, 0.08);
+                box-sizing: border-box;
+                border-radius: 50px;
+                background: transparent;
+                padding: 0px;
+                width: 56px;
+                height: 56px;
+                .Button__content {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
