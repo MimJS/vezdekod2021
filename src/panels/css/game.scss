@@ -1,0 +1,41 @@
+#game {
+    height: 100%;
+    .Panel__in {
+        display: block;
+    }
+    .in {
+        height: calc(100vh - 48px - 52px);
+        margin: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .room_id {
+            display: flex;
+            justify-content: center;
+        }
+        .block_btns {
+            margin: 16px 0px;
+            display: flex;
+            min-width:calc(100% - 16px);
+            flex-direction: row;
+            justify-content: center;
+            .Button {
+                flex-grow: 1;
+                min-width: 12.5%;
+                &:not(:last-child) {
+                    margin-right: 2px;
+                }
+            }
+            .btn-active {
+                background: white;
+            }
+            .btn-light {
+                background: yellow !important;
+            }
+        }
+        .vkuiButton--stretched {
+            flex-grow: 0!important;
+        }
+    }
+}
